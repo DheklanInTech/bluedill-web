@@ -6,8 +6,6 @@ import dynamic from "next/dynamic";
 
 const NavLight = dynamic(()=>import('../components/navlight'))
 const Footer = dynamic(() => import('../components/footer'))
-// const Switcher = dynamic(() => import('../components/switcher'))
-const Blogs = dynamic(() => import('../components/blogs'))
 const ClientsTwo = dynamic(() => import('../components/clientTwo'))
 
 import {FiCheckCircle} from "../assets/icons/vander"
@@ -196,10 +194,9 @@ export default function AboutUs(){
             </div>
 
             <ClientsTwo/>
-            <Blogs/>
         </section>
         <Footer/>
-        // <Switcher/> 
+    
         </>
     )
 }
