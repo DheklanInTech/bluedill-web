@@ -30,7 +30,7 @@ export default function Pricings(){
                     </div>
 
                     <ul className="tracking-[0.5px] mb-0 inline-block mt-5">
-                        <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white/50 hover:text-white"><Link href="/">Mortal.Ai</Link></li>
+                        <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white/50 hover:text-white"><Link href="/">Bluedill</Link></li>
                         <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i className="mdi mdi-chevron-right"></i></li>
                         <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white" aria-current="page">Pricing</li>
                     </ul>
@@ -51,7 +51,9 @@ export default function Pricings(){
                 <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">You dont have to choose between cost, time and quality</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">Artificial intelligence makes it fast easy to create content for your blog, social media, website, and more!</p>
+                    <p className="text-slate-400 max-w-xl mx-auto">The First Agentless Cloud Contract
+Life Cycle Management
+System </p>
                 </div>
                 <Pricing/>
             </div>
