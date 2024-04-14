@@ -2,11 +2,10 @@
 import React,{useState, useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-
-const NavLight = dynamic(()=>import('../components/navlight'))
-const Footer = dynamic(() => import('../components/footer'))
-const ClientsTwo = dynamic(() => import('../components/clientTwo'))
+import NavLight from "../components/navlight";
+import Footer from "../components/footer";
+import ClientsTwo from "../components/clientTwo";
+import Faq from "../components/Faq";
 
 import {FiCheckCircle} from "../assets/icons/vander"
 
@@ -66,7 +65,7 @@ export default function AboutUs(){
                     </div>
 
                     <ul className="tracking-[0.5px] mb-0 inline-block mt-5">
-                        <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white/50 hover:text-white"><Link href="/">Mortal.Ai</Link></li>
+                        <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white/50 hover:text-white"><Link href="/">Bluedill</Link></li>
                         <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i className="mdi mdi-chevron-right"></i></li>
                         <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white" aria-current="page">About Us</li>
                     </ul>
@@ -171,29 +170,9 @@ export default function AboutUs(){
                 </div>
             </div>
 
-            <div className="container relative md:mt-24 mt-16">
-                <div className="grid grid-cols-1 pb-6 text-center">
-                    <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">The Team</h3>
-
-                    <p className="text-slate-400 max-w-xl mx-auto">Artificial intelligence makes it fast easy to create content for your blog, social media, website, and more!</p>
-                </div>
-
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-                    {teamData.map((item,index)=>{
-                        return(
-                            <div className="overflow-hidden relative w-full mx-auto bg-white dark:bg-slate-900 shadow hover:shadow-md dark:shadow-slate-800 rounded-md flex items-center duration-500" key={index}>
-                                <Image src={item.image} width={0} height={0} sizes="100vw" style={{width:"100%", height:"auto"}} alt="" className="absolute -start-10 w-40 h-40 rounded-full shadow-lg" />
-                                <div className="min-w-0 py-10 ps-36 pe-6">
-                                    <Link href="" className="text-lg font-medium hover:text-amber-400">{item.name}</Link>
-                                    <p className="text-slate-400">{item.title}</p>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-            </div>
-
-            <ClientsTwo/>
+         
+          <Faq/>
+          <ClientsTwo/>
         </section>
         <Footer/>
     

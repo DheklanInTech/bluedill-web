@@ -116,12 +116,9 @@ if (typeof window !== "undefined"){
         <>
         <nav id="topnav" className={`${scroll ? "nav-sticky" : "" } defaultscroll is-sticky`}>
             <div className="container">
-                <Link className="logo" href="/">
-                    <span className="inline-block dark:hidden">
-                        <Image src="/images/logo-dark.png" width={128} height={24} className="h-6 l-dark" alt=""/>
-                        <Image src="/images/logo-white.png" width={128} height={24} className="h-6 l-light" alt=""/>
-                    </span>
-                    <Image src="/images/logo-light.png" width={128} height={24} className="h-6 hidden dark:inline-block" alt=""></Image>
+            <Link className="logo" href="/">
+                    <Image src="/Logo.svg" width={150} height={24} className="h-8 inline-block dark:hidden" alt=""/>
+                    <Image src="/Logowhite.svg" width={150} height={24} className="h-8 hidden dark:inline-block" alt=""/>
                 </Link>
                
                 <div className="menu-extras">
@@ -144,58 +141,18 @@ if (typeof window !== "undefined"){
                     </li>
             
                     <li className="md:inline hidden ps-1 mb-0 ">
-                        <Link href="/signup" target="_blank" className="py-[6px] px-4 inline-block items-center justify-center tracking-wider align-middle duration-500 text-sm text-center rounded bg-amber-400 hover:bg-amber-500 border border-amber-400 hover:border-amber-500 text-white font-semibold">Signup</Link>
+                        <button type="button" className="py-[6px] px-4 inline-block items-center justify-center tracking-wider align-middle duration-500 text-sm text-center rounded bg-amber-400 hover:bg-amber-500 border border-amber-400 hover:border-amber-500 text-white font-semibold">Task panel</button>
                     </li>
                 </ul>
                 <div id="navigation" className={`${toggleMenu ? 'block' : ''}`}>
                     <ul className="navigation-menu nav-light">
-                        <li className="has-submenu parent-menu-item">
-                            <Link href="#">Home</Link><span className="menu-arrow"></span>
-                            <ul className="submenu">
-                                <li><Link href="/" className="sub-menu-item">Hero One</Link></li>
-                                <li><Link href="/index-two" className="sub-menu-item">Hero Two</Link></li>
-                                <li><Link href="/index-three" className="sub-menu-item">Hero Three</Link></li>
-                                <li><Link href="/index-light" className="sub-menu-item">Hero Light <span className="bg-gray-50 dark:bg-slate-800 text-[10px] shadow shadow-gray-300 dark:shadow-gray-700 font-bold px-2.5 py-0.5 rounded h-5 ms-1">Light</span></Link></li>
-                            </ul>
+                        
+                    <li className="has-submenu parent-menu-item">
+                            <Link href="/">Home</Link>
                         </li>
-
-                
                         <li><Link href="/aboutus" className="sub-menu-item">About Us</Link></li>
-                        <li><Link href="/pricing" className="sub-menu-item">Pricing </Link></li>
-                
-                        <li className="has-submenu parent-parent-menu-item">
-                            <Link href="#">Pages</Link><span className="menu-arrow"></span>
-                            <ul className="submenu">
-                                <li><Link href="/services" className="sub-menu-item">Services</Link></li>
-                        
-                                <li className="has-submenu parent-menu-item"><Link href="#"> Blog </Link><span className="submenu-arrow"></span>
-                                    <ul className="submenu">
-                                        <li><Link href="/blog" className="sub-menu-item"> Blogs</Link></li>
-                                        <li><Link href="/blog-detail" className="sub-menu-item"> Blog Detail</Link></li>
-                                    </ul> 
-                                </li>
-                        
-                                <li><Link href="/helpcenter" className="sub-menu-item">Helpcenter</Link></li>
-
-                                <li className="has-submenu parent-menu-item"><Link href="#"> Auth Pages </Link><span className="submenu-arrow"></span>
-                                    <ul className="submenu">
-                                        <li><Link href="/login" className="sub-menu-item"> Login</Link></li>
-                                        <li><Link href="/signup" className="sub-menu-item"> Signup</Link></li>
-                                        <li><Link href="/reset-password" className="sub-menu-item"> Forgot Password</Link></li>
-                                    </ul> 
-                                </li>
-                                <li className="has-submenu parent-menu-item"><Link href="#"> Utility </Link><span className="submenu-arrow"></span>
-                                    <ul className="submenu">
-                                        <li><Link href="/terms" className="sub-menu-item">Terms of Services</Link></li>
-                                        <li><Link href="/privacy" className="sub-menu-item">Privacy Policy</Link></li>
-                                    </ul>  
-                                </li>
-                        
-                                <li><Link href="/error" className="sub-menu-item"> 404!</Link></li>
-                            </ul>
-                        </li>
-                
-                        <li><Link href="/contact" className="sub-menu-item">Contact</Link></li>
+                        <li><Link href="/pricing" className="sub-menu-item">Pricing</Link></li>
+                        <li><Link href="/contact" className="sub-menu-item">Contact</Link></li> 
                     </ul>
                 </div>
             </div>

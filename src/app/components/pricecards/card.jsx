@@ -1,7 +1,10 @@
 "use client"
 
-import React from 'react'
+
+import React,{useCallback} from "react";
 import Link from 'next/link'
+import { useRouter } from "next/navigation";
+// import { loadStripe } from '@stripe/stripe-js';
 import {FiCheckCircle} from '../../assets/icons/vander'
 
 export const Cardwrapper = ({children}) => {
@@ -31,6 +34,11 @@ export const FreePlanTop = () => {
 }
 
 export const PaidPlanTop = ({title,subtitle,amount,period}) => {
+  const router = useRouter()
+  const purchase = useCallback(async (price) => {
+      const {url} = await (await fetch(`http://localhost:3000/api/payment?price=${price}`)).json();
+      router.push(String(url));
+   }, []);
   return (
     <div className="p-6">
     <h5 className="text-2xl leading-normal font-semibold">{title}</h5>
@@ -49,7 +57,7 @@ export const PaidPlanTop = ({title,subtitle,amount,period}) => {
       
     </div>
     <div className="mt-4">
-        <Link href="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-amber-400 hover:bg-amber-500 border-amber-400 hover:border-amber-500 text-white rounded">Subscribe Now</Link>
+        <button type='button' onClick={() => purchase(amount)} className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-amber-400 hover:bg-amber-500 border-amber-400 hover:border-amber-500 text-white rounded">Subscribe Now</button>
     </div>
 </div>
 )

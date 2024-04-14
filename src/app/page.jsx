@@ -2,7 +2,7 @@
 import React, {useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import dynamic from "next/dynamic";
+
 import Navbar from "./components/navbar";
 import Footer from "@/app/components/footer"
 import BrandLogo from "./components/brandLogo";
@@ -10,9 +10,7 @@ import Features from "@/app/components/features";
 import AboutOne from "@/app/components/aboutOne";
 import AboutTwo from "@/app/components/aboutTwo";
 import AboutThree from "@/app/components/aboutThree";
-import AmazingFeatures from "@/app/components/amazingFeatures";
-import  Pricing from "@/app/components/pricing";
-import  Faq from "@/app/components/Faq";
+import AmazingFeatures from "@/app/components/amazingFeatures"; 
 import { TypeAnimation } from 'react-type-animation';
 
 
@@ -88,19 +86,8 @@ export default function Index(){
           <AboutTwo/>
           <AmazingFeatures/>
           <AboutThree/>
-
-            <div className="container relative md:mt-24 mt-16">
-                <div className="grid grid-cols-1 pb-6 text-center">
-                    <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">The right plans, <br/> <span className="bg-gradient-to-br from-amber-400 to-fuchsia-600 text-transparent bg-clip-text">for the right price</span></h3>
-
-                    <p className="text-slate-400 max-w-xl mx-auto">Artificial intelligence makes it fast easy to create content for your blog, social media, website, and more!</p>
-                </div>
-                <Pricing/>
-            </div>
-            <Faq/>
         </section>
-        <Footer/>
-      
+        <Footer/> 
         </>
     )
 }

@@ -1,11 +1,12 @@
 "use client"
-import React,{useEffect, useState} from "react";
+import React,{ useState,} from "react";
 import { CardFeatures, Cardwrapper, FreePlanTop, Lists, PaidPlanTop } from "./pricecards/card";
 
 
 
 export default function Pricing(){
     const [Period, setPeriod] = useState("monthly") 
+   
     
 
     const freeplan = ["Convert documents","Document Encryption  ", "Unlimited Document share"];

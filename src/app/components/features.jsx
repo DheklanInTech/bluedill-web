@@ -5,32 +5,32 @@ import Image from "next/image";
 export default function Features({classlist}){
     const featuresData = [
         {
-            image:'/images/features/video-1.png',
+            image:'/images/features/img5.jpg',
             title:"Document Versioning",
             desc:"Manage document versions right from your dashboard and keep track of the latest version of contract documents."
         },
         {
-            image:'/images/features/video-2.png',
+            image:'/images/features/img4.jpg',
             title:"Secure Password Sharing",
             desc:"Securely share your document password with other parties without compromising password integrity."
         },
         {
-            image:'/images/features/video-3.png',
+            image:'/images/features/img3.jpg',
             title:"Signature Request",
             desc:"Alert parties to obligation by requesting signatures with just a single click of a button, saves time, effort and accelerates workflow."
         },
         {
-            image:'/images/features/video-1.png',
+            image:'/images/features/img1.jpg',
             title:"Contract agreement transparency",
             desc:"Hugely saves time in retrying failed sent files leaves our customers less worried if a file document is successfully shared or not."
         },
         {
-            image:'/images/features/video-2.png',
+            image:'/images/features/img2.jpg',
             title:"Collaboration",
             desc:"invite parties to participate in editing and reviewing documents with control of your palms to grant parties rights to view or edit documents only."
         },
         {
-            image:'/images/features/video-3.png',
+            image:'/images/features/img6.jpg',
             title:"Password Generator",
             desc:"Automatically generates password to encrypt your document remembers it incase you want to re-use it."
         },
