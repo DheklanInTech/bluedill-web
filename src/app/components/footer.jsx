@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { aboutLinks, solutionLinks, supportLinks } from './links'
 
 import {FiShoppingCart, FiDribbble, FiLinkedin, FiFacebook, FiInstagram, FiTwitter, FiMail,FiFileText} from '../assets/icons/vander'
 
@@ -56,6 +57,44 @@ export default function Footer(){
                     </div>
                 </div>
             </div>
+
+            <div className='container relative flex items-center justify-between w-full py-8'>
+            <div className='flex-auto  w-full'>
+               <div className='grid md:grid-cols-3 grid-cols-2'>
+                  <div>
+                     <p>About</p>
+                     {aboutLinks.map((item) => {
+                        return (
+                           <Link href={item.path} key={item.linkname} className='flex flex-col text-gray-400 mt-4 font-light md:text-xs text-sm   md:w-1/2 w-full'> 
+                              {item.linkname}
+                           </Link>
+                        )
+                     })}
+                  </div>
+                  <div>
+                     <p>Support</p>
+                     {supportLinks.map((item) => {
+                        return (
+                           <Link href={item.path} key={item.linkname} className='flex flex-col text-gray-400 mt-4 font-light md:text-xs text-sm  md:w-1/2 w-full'>
+                              {item.linkname}
+                           </Link>
+                        )
+                     })}
+                  </div>
+                  <div>
+                     <p>Solutions</p>
+                     {solutionLinks.map((item) => {
+                        return (
+                           <Link href={item.path} key={item.linkname} className='flex flex-col text-gray-400 mt-4 font-light md:text-xs text-sm  md:w-1/2 w-full'>
+                              {item.linkname}
+                           </Link>
+                        )
+                     })}
+                  </div>
+               </div>
+            </div>
+            
+         </div>
 
             <div className="py-[30px] px-0 border-t border-gray-800 dark:border-slate-800">
                 <div className="container relative text-center">

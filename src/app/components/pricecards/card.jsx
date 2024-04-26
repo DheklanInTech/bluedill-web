@@ -53,8 +53,6 @@ export const PaidPlanTop = ({title,subtitle,amount,period}) => {
                 <p className="text-slate-400 uppercase text-xs">per {period}</p>
             </span>
         </div>
-
-      
     </div>
     <div className="mt-4">
         <button type='button' onClick={() => purchase(amount)} className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-amber-400 hover:bg-amber-500 border-amber-400 hover:border-amber-500 text-white rounded">Subscribe Now</button>

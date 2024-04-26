@@ -2,6 +2,7 @@ import './globals.css'
 import './assets/css/tailwind.css'
 import "./assets/css/materialdesignicons.min.css"
 import { Figtree} from 'next/font/google'
+import ClientOnly from './components/ClientOnly'
 
 const figtree= Figtree({ 
   subsets: ['latin'],
@@ -23,7 +24,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" as='image'  type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" as='image' href="/site.webmanifest" />
       </head>
-      <body className={`${figtree.variable} font-figtree text-base text-slate-900 dark:text-white dark:bg-slate-900 `}>{children}</body>
+      <body className={`${figtree.variable} font-figtree text-base text-slate-900 dark:text-white dark:bg-slate-900 `}>
+        <ClientOnly>
+        {children}
+        </ClientOnly>
+        </body>
     </html>
   )
 }

@@ -1,10 +1,9 @@
 "use client"
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 import {FiCheckCircle} from "react-icons/fi";
-import { MdKeyboardArrowRight} from "react-icons/md"
+
 
 export default function AboutOne(){
     return(
