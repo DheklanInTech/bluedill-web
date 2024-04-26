@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
-import {FiEdit2, FiAirplay, FiCreditCard, FiGlobe, FiLayout,FiLifeBuoy} from "../assets/icons/vander"
+import {FiEdit2, FiAirplay, FiCreditCard, FiGlobe, FiLayout,FiLifeBuoy} from "../assets/icons/vander";
+
 export default function AiFeatures(){
     const featureData = [
         {

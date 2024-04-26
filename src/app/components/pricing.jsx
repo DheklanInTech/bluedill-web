@@ -8,7 +8,6 @@ export default function Pricing(){
     const [Period, setPeriod] = useState("monthly") 
    
     
-
     const freeplan = ["Convert documents","Document Encryption  ", "Unlimited Document share"];
     const basicplan = ["All in Free Plan including","1hr time collaboration ",
     "Unlimited use of template within time permit","Unlimited Signature request within time permit ","Basic File Automation","History of Logs","24 x 7 Support","Collaboration of upto 2 users"

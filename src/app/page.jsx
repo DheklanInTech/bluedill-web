@@ -4,13 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Navbar from "./components/navbar";
-import Footer from "@/app/components/footer"
+import Footer from "./components/footer";
 import BrandLogo from "./components/brandLogo";
-import Features from "@/app/components/features";
-import AboutOne from "@/app/components/aboutOne";
-import AboutTwo from "@/app/components/aboutTwo";
-import AboutThree from "@/app/components/aboutThree";
-import AmazingFeatures from "@/app/components/amazingFeatures"; 
+import Features from "./components/features";
+import AboutOne from "./components/aboutOne";
+import AboutTwo from "./components/aboutTwo";
+import AboutThree from "./components/aboutThree";
+import AmazingFeatures from "./components/amazingFeatures"; 
 import { TypeAnimation } from 'react-type-animation';
 
 
