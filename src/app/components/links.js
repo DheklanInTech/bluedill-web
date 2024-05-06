@@ -2,19 +2,19 @@
 export const aboutLinks = [
     {
         linkname: "About Us",
-        path: "/"
+        path: "/aboutus"
     },
     {
         linkname: "Careers",
-        path: "/"
+        path: "/careers"
     },
     {
         linkname: "Privacy Policy",
-        path: "/"
+        path: "/privacy"
     },
     {
-        linkname: "Cookie Policy ",
-        path: "/"
+        linkname: "Term Condition ",
+        path: "/term"
     },
 ];
 export const supportLinks = [
@@ -23,16 +23,12 @@ export const supportLinks = [
         path: "/"
     },
     {
-        linkname: "Security",
-        path: "/"
-    },
-    {
         linkname: "Contact Us",
-        path: "/"
+        path: "/contact"
     },
     {
         linkname: "Pricing",
-        path: "/"
+        path: "/pricing"
     },
     {
         linkname: "FAQ",
