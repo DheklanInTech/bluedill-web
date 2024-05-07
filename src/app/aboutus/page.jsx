@@ -14,11 +14,11 @@ import '../../../node_modules/react-modal-video/css/modal-video.css'
 
 
 export default function AboutUs(){
-    useEffect(() => {
-        document.documentElement.setAttribute("dir", "ltr");
-        document.documentElement.classList.add('dark');
-        document.documentElement.classList.remove('light');
-      }, []);
+    // useEffect(() => {
+    //     document.documentElement.setAttribute("dir", "ltr");
+    //     document.documentElement.classList.add('dark');
+    //     document.documentElement.classList.remove('light');
+    //   }, []);
     const [isOpen, setOpen] = useState(false);
     const [activeIndex,setActiveIndex] = useState(0)
     const teamData = [
@@ -87,21 +87,9 @@ export default function AboutUs(){
                     <div className="relative overflow-hidden after:content-[''] after:absolute after:inset-0 after:m-auto after:w-96 after:h-96 after:bg-gradient-to-tl after:to-amber-400 after:from-fuchsia-600 after:blur-[80px] after:rounded-full p-6 bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-slate-800 lg:me-6">
                         <div className="relative overflow-hidden rounded-lg shadow-md dark:shadow-gray-800 z-1">
                             <Image src='/images/about.jpg' width={0} height={0} sizes="100vw" style={{width:"100%", height:"auto"}} alt=""/>
-    
-                            <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                <Link href="#!" onClick={() => setOpen(true)} className="lightbox lg:h-16 h-14 lg:w-16 w-14 rounded-full shadow-lg dark:shadow-gray-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 hover:bg-amber-400 dark:hover:bg-amber-400 text-amber-400 hover:text-white duration-500 ease-in-out mx-auto">
-                                    <i className="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                                </Link>
-                            </div>
                         </div>
                     </div>
-                    <ModalVideo
-                        channel="youtube"
-                        youtube={{ mute: 0, autoplay: 0 }}
-                        isOpen={isOpen}
-                        videoId="S_CGed6E610"
-                        onClose={() => setOpen(false)} 
-                    />
+                   
                     <div className="">
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold"><span className="font-bold">Work smarter,</span> <br/> by using AI not  manually</h3>
                         <p className="text-slate-400 max-w-xl">Usually, our colleagues dont jump in the air when they hear e-learning, but the AI videos created with Mortal.Ai have sparked motivation that we havent seen before.</p>
@@ -172,7 +160,7 @@ export default function AboutUs(){
 
          
           <Faq/>
-          <ClientsTwo/>
+          {/* <ClientsTwo/> */}
         </section>
         <Footer/>
     
