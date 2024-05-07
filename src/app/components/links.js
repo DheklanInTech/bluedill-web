@@ -6,7 +6,7 @@ export const aboutLinks = [
     },
     {
         linkname: "Careers",
-        path: "/"
+        path: "/careers"
     },
     {
         linkname: "Privacy Policy",
@@ -22,10 +22,6 @@ export const supportLinks = [
     //     linkname: "Developer API",
     //     path: "/"
     // },
-    {
-        linkname: "Security",
-        path: "/"
-    },
     {
         linkname: "Contact Us",
         path: "/contact"
