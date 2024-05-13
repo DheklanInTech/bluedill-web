@@ -58,8 +58,9 @@ export default function Pricings(){
                     <Pricing />
                 </div>
                 <Pricing/>
-            </div>
+           
             {/* <ClientsTwo/> */}
+
         </section>
         <Footer/>
      
