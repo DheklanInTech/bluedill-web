@@ -1,10 +1,12 @@
 'use client'
 import React from "react";
-import Link from "next/link";
+import React, { useEffect } from "react";
+
 
 
 import NavLight from "../components/navlight";
 import Footer from "../components/footer";
+
 
 
 
@@ -14,35 +16,11 @@ const job = [
         id: 1,
         caterogy: 'Engineering, Product & Design',
         items:[],
-        // items: [
-        //     {
-        //         id: 1,
-        //         name: 'Staff Product Designer',
-        //         location: 'San Francisco, CA'
-        //     },
-        //     {
-        //         id: 2,
-        //         name: 'Staff Software Engineer, Monetization',
-        //         location: 'San Francisco, CA'
-        //     }
-        // ]
     },
     {
         id: 2,
         caterogy: 'Sales',
         items:[],
-        // items: [
-        //     {
-        //         id: 1,
-        //         name: 'Senior Solutions Engineer, Enterprise',
-        //         location: 'New York, NY'
-        //     },
-        //     {
-        //         id: 2,
-        //         name: 'Enterprise Account Executive, EMEA',
-        //         location: 'London'
-        //     }
-        // ]
     },
     {
         id: 3,
@@ -51,12 +29,12 @@ const job = [
     }
 ];
 
-
 export default function Careers() {
     return (
         <>
             <NavLight />
             <section className='w-full flex flex-col items-center mt-12  gap-y-6 py-20'>
+
                 <div className='w-[80%] md:w-[50%] flex flex-col items-center gap-y-2'>
                     <h6>Grow & Learn from the best</h6>
                     <p className='text-center text-xl'>We are a group of motivated, mission-driven people who love learning from each other. Out of all the incredible things about working here, the biggest benefit is by far the team.</p>
@@ -220,6 +198,7 @@ export default function Careers() {
                             </div>
                         </div>
                     </div>
+
                 })}
 
 
