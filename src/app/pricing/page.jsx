@@ -11,12 +11,12 @@ import Pricing from "../components/pricing";
 
 
 
-export default function Pricings() {
-    useEffect(() => {
-        document.documentElement.setAttribute("dir", "ltr");
-        document.documentElement.classList.add('dark');
-        document.documentElement.classList.remove('light');
-    }, []);
+export default function Pricings(){
+    // useEffect(() => {
+    //     document.documentElement.setAttribute("dir", "ltr");
+    //     document.documentElement.classList.add('dark');
+    //     document.documentElement.classList.remove('light');
+    //   }, []);
 
     return (
         <>
@@ -57,10 +57,13 @@ export default function Pricings() {
                     </div>
                     <Pricing />
                 </div>
-                <ClientsTwo />
-            </section>
-            <Footer />
+                <Pricing/>
+           
+            {/* <ClientsTwo/> */}
 
+        </section>
+        <Footer/>
+     
         </>
     )
 }

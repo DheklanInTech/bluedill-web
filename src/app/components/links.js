@@ -13,15 +13,15 @@ export const aboutLinks = [
         path: "/privacy"
     },
     {
-        linkname: "Term Condition ",
-        path: "/term"
+        linkname: "Cookie Policy ",
+        path: "/privacy"
     },
 ];
 export const supportLinks = [
-    {
-        linkname: "Developer API",
-        path: "/"
-    },
+    // {
+    //     linkname: "Developer API",
+    //     path: "/"
+    // },
     {
         linkname: "Contact Us",
         path: "/contact"
@@ -32,44 +32,44 @@ export const supportLinks = [
     },
     {
         linkname: "FAQ",
-        path: "/"
+        path: "/aboutus"
     },
 ];
 export const solutionLinks = [
     {
         linkname: "Finance",
-        path: "/pages/finance"
+        path: "/readmore/?page=2"
     },
     {
         linkname: "Healthcare",
-        path: "/pages/healthcare"
+        path: "/readmore/?page="
     },
     {
         linkname: "Manufacturing",
-        path: "/pages/manufacturing"
+        path: "/readmore/?page="
     },
     {
         linkname: "Government",
-        path: "/pages/government"
+        path: "/readmore/?page=3"
     },
     {
         linkname: "Energy and power",
-        path: "/pages/energy"
+        path: "/readmore/?page="
     },
     {
         linkname: "Legal firms",
-        path: "/pages/legal"
+        path: "/readmore/?page=5"
     },
     {
         linkname: "Education",
-        path: "/pages/education"
+        path: "/readmore/?page=1"
     },
     {
         linkname: "Oil and Gas",
-        path: "/pages/oil&gas"
+        path: "/readmore/?page=4"
     },
     {
         linkname: "Procurement",
-        path: "/pages/procurement"
+        path: "/readmore/?page="
     },
 ];
