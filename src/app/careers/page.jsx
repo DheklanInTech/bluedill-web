@@ -1,18 +1,36 @@
 'use client'
-import React, { useEffect } from "react";
-import Link from "next/link";
-
-
+import React from "react";
 import NavLight from "../components/navlight";
 import Footer from "../components/footer";
 
 
 
+
+
+const job = [
+    {
+        id: 1,
+        caterogy: 'Engineering, Product & Design',
+        items:[],
+    },
+    {
+        id: 2,
+        caterogy: 'Sales',
+        items:[],
+    },
+    {
+        id: 3,
+        caterogy: 'Marketing',
+        items: [] // Empty array
+    }
+];
+
 export default function Careers() {
     return (
         <>
             <NavLight />
-            <section className='w-full flex flex-col items-center bg-green-200 gap-y-6 py-12'>
+            <section className='w-full flex flex-col items-center mt-12  gap-y-6 py-20'>
+
                 <div className='w-[80%] md:w-[50%] flex flex-col items-center gap-y-2'>
                     <h6>Grow & Learn from the best</h6>
                     <p className='text-center text-xl'>We are a group of motivated, mission-driven people who love learning from each other. Out of all the incredible things about working here, the biggest benefit is by far the team.</p>
@@ -104,114 +122,82 @@ export default function Careers() {
             </section>
 
             <section>
-                <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                    <div className="flex flex-col">
-                        <div className="-m-1.5 overflow-x-auto">
-                            <div className="p-1.5 min-w-full flex flex-col md:flex-row align-middle gap-y-4">
-                                <div className='text-black w-full md:w-1/2 flex justify-center'>Engineering, Product & Design</div>
-                                <div className="w-full md:w-1/2 border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-neutral-800 dark:border-neutral-700">
 
-                                    <table className="w-full divide-y divide-gray-200 dark:divide-neutral-700">
-                                        <thead className="bg-gray-50 dark:bg-neutral-800 hidden">
-                                            <tr>
-
-
-                                                <th scope="col" className="ps-6 lg:ps-3 xl:ps-0 pe-6 py-3 text-start">
-                                                    <div className="flex items-center gap-x-2">
-                                                        <span className="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-neutral-200">
-                                                            Name
-                                                        </span>
-                                                    </div>
-                                                </th>
-
-                                                <th scope="col" className="hidden md:flex px-6 py-3 text-start">
-                                                    <div className="flex items-center gap-x-2">
-                                                        <span className="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-neutral-200">
-                                                            Position
-                                                        </span>
-                                                    </div>
-                                                </th>
-
-                                                <th scope="col" className="px-6 py-3 text-start">
-                                                    <div className="flex items-center gap-x-2">
-                                                        <span className="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-neutral-200">
-                                                            Status
-                                                        </span>
-                                                    </div>
-                                                </th>
-
-
-
-
-                                            </tr>
-                                        </thead>
-
-                                        <tbody className="divide-y divide-gray-200 dark:divide-neutral-700">
-                                            <tr>
-
-
-                                                <td className="h-px  whitespace-nowrap">
-                                                    <div className="px-6 py-3">
-                                                        <span className="block text-sm font-semibold text-gray-800 dark:text-neutral-200">Staff Product Designer</span>
-                                                        <span className="flex md:hidden text-sm text-gray-500 dark:text-neutral-500">San Francisco, CA</span>
-                                                    </div>
-                                                </td>
-                                                <td className="hidden md:flex size-px whitespace-nowrap">
-                                                    <div className="px-6 py-3">
-                                                        <span className="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full dark:bg-teal-500/10 dark:text-teal-500">
-                                                            San Francisco, CA
-                                                        </span>
-                                                    </div>
-                                                </td>
-
-
-                                                <td className="size-px whitespace-nowrap">
-                                                    <div className="px-6 py-1.5">
-                                                        <a className="inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">
-                                                            Apply Now
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-
-
-                                                <td className="h-px  whitespace-nowrap">
-                                                    <div className="px-6 py-3">
-                                                        <span className="block text-sm font-semibold text-gray-800 dark:text-neutral-200">Staff Product Designer</span>
-                                                        <span className="flex md:hidden text-sm text-gray-500 dark:text-neutral-500">San Francisco, CA</span>
-                                                    </div>
-                                                </td>
-                                                <td className="hidden md:flex size-px whitespace-nowrap">
-                                                    <div className="px-6 py-3">
-                                                        <span className="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full dark:bg-teal-500/10 dark:text-teal-500">
-                                                            San Francisco, CA
-                                                        </span>
-                                                    </div>
-                                                </td>
-
-
-                                                <td className="size-px whitespace-nowrap">
-                                                    <div className="px-6 py-1.5">
-                                                        <a className="inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">
-                                                            Apply Now
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                {job.map(el => {
+                    const { id, caterogy, items } = el;
+                    return <div key={id} className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                        <div className="flex flex-col">
+                            <div className="-m-1.5 overflow-x-auto">
+                                <div className="p-1.5 w-full flex flex-col md:flex-row align-middle gap-y-4 items-center">
 
 
 
 
 
+                                    <div className=' md:w-[40%] flex justify-center text-white'>{caterogy}</div>
+                                    <div className="w-full md:w-[70%] rounded-xl overflow-hidden flex justify-center items-center">
 
-                                        </tbody>
-                                    </table>
+                                        <table class="w-[80%] text-sm text-left rtl:text-right text-gray-500">
+
+                                            <thead class="hidden text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                                <tr>
+                                                    <th scope="col" class="px-6 py-3">
+
+                                                    </th>
+                                                    <th scope="col" class="px-6 py-3">
+                                                        Color
+                                                    </th>
+
+
+                                                    <th scope="col" class="px-6 py-3">
+                                                        <span class="sr-only">Edit</span>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                                
+                                                {items.length === 0 ? (
+                                                    <p class="text-white text-lg font-extralight">Job is not available</p>
+                                                ) : (
+                                                    items.map(item=>{
+                                                        const { id, name , location } = item;
+                                                        return <tr key={id} class="border-b mt-2">
+                                                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                                            <div class="flex flex-col text-white">
+                                                                <p className="text-lg font-medium">{name}</p>
+                                                                <p className="flex md:hidden text-sm">{name}</p>
+                                                            </div>
+                                                        </th>
+                                                        <td class="px-6 py-4 hidden md:flex text-white">
+                                                            {location}
+                                                        </td>
+                                                        
+                                                        <td class="px-6 py-4 text-right">
+                                                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Apply Now</a>
+                                                        </td>
+                                                    </tr>
+                                                    })
+                                                )}
+
+
+
+                                            </tbody>
+                                        </table>
+
+
+
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                })}
+
+
             </section>
             <Footer />
         </>

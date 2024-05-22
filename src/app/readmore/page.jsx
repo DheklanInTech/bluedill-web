@@ -23,7 +23,8 @@ export default function Page() {
         const { id, icon, title, desc, details } = value;
         return <div key={id} className="container w-full relative mt-24 py-8">
           <div className="w-full items-center gap-6 justify-center flex">
-            <div className="w-[80%]">
+            <div className="w-[95%] md:w-[80%]">
+
               <h4 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">{title}</h4>
               <p>{desc}</p>
               <ul>
