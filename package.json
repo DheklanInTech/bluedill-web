@@ -16,7 +16,9 @@
     "react-modal-video": "^2.0.1",
     "react-scroll": "^1.9.0",
     "react-type-animation": "^3.2.0",
-    "stripe": "^15.1.0"
+    "stripe": "^15.1.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "preline":"^2.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
