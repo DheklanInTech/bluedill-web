@@ -53,5 +53,38 @@ export const featureData = [
             '<p><b>Document Automation:</b> Drafting legal documents can be time-consuming and error-prone. BlueDill CMS automates document creation by generating standardized contracts, agreements, and legal forms based on predefined templates, reducing the risk of drafting errors and ensuring consistency across legal documents.</p>',
             '<p><b>Compliance Monitoring:</b> Staying compliant with changing laws and regulations is essential for law firms to mitigate legal risks. BlueDill CMS helps legal professionals monitor regulatory changes, update contract templates accordingly, and ensure that client contracts adhere to current legal requirements, minimizing exposure to legal liabilities.</p>'
         ]
+    },
+    {
+        id: 6,
+        icon: "mdi mdi-flash-outline",
+        title: 'Energy and Power',
+        desc: 'In the energy and power sector, where contracts govern complex operations and partnerships, BlueDill contract management system ensures seamless coordination and compliance, optimizing efficiency and minimizing risks.',
+        details: [
+            '<p><b>Power Purchase Agreements (PPAs):</b> Power generation companies enter into PPAs with utilities or corporate consumers to sell electricity. BlueDill CMS streamlines the management of PPAs by automating contract drafting, tracking electricity delivery schedules, and facilitating invoice generation and payment reconciliation, ensuring transparent and efficient energy transactions.</p>',
+            '<p><b>Renewable Energy Projects:</b> With the increasing focus on renewable energy sources, companies involved in renewable energy projects face unique contract management challenges. BlueDill CMS supports the lifecycle management of renewable energy contracts, from land leases for solar or wind farms to power sale agreements, helping organizations navigate regulatory requirements and optimize project profitability.</p>',
+            '<p><b>Asset Management:</b> Energy companies maintain large portfolios of assets, including power plants, transmission lines, and substations. BlueDill CMS provides tools for managing asset-related contracts, such as maintenance agreements, equipment leases, and service contracts, optimizing asset performance and ensuring compliance with operational standards and regulatory mandates.</p>'
+        ]
+    },
+    {
+        id: 7,
+        icon: "mdi mdi-briefcase-check-outline",
+        title: 'Legal Firms',
+        desc: 'Legal firms benefit from the automation and efficiency provided by BlueDill contract management system, enabling them to better serve their clients and manage their own operations.',
+        details: [
+            '<p><b>Client Engagement:</b> BlueDill CMS streamlines client engagement processes for legal firms by automating contract creation, approval workflows, and client communications. From initial consultations to ongoing representation, legal firms can efficiently manage client relationships while ensuring compliance with ethical and regulatory requirements.</p>',
+            '<p><b>Practice Management:</b> Managing legal practices involves handling a wide range of contracts and documents. BlueDill CMS serves as a centralized platform for organizing case files, tracking deadlines, and managing internal workflows, improving collaboration among legal teams and enhancing overall productivity.</p>',
+            '<p><b>Knowledge Management:</b> Legal firms rely on access to relevant legal precedents, case law, and regulatory updates. BlueDill CMS facilitates knowledge management by providing searchable repositories of legal resources, enabling attorneys to leverage past work and stay informed about changes in the legal landscape, ultimately delivering better outcomes for clients.</p>'
+        ]
+    },
+    {
+        id: 8,
+        icon: "mdi mdi-school-outline",
+        title: 'Procurement',
+        desc: 'Effective procurement management is essential for organizations to optimize their supply chains, minimize costs, and mitigate risks. BlueDill contract management system empowers procurement professionals with tools to streamline sourcing, contracting, and supplier management processes.',
+        details: [
+            '<p><b>Supplier Onboarding:</b> BlueDill CMS simplifies the supplier onboarding process by automating vendor qualification, contract negotiation, and performance evaluation. Procurement teams can efficiently assess supplier capabilities, negotiate favorable terms, and establish clear expectations, laying the foundation for successful supplier relationships.</p>',
+            '<p><b>Contract Negotiation:</b> Negotiating contracts with suppliers requires careful consideration of terms and conditions to ensure alignment with organizational goals and regulatory requirements. BlueDill CMS provides collaboration tools for cross-functional teams to streamline contract negotiations, track changes, and reach consensus efficiently, accelerating the contracting process and reducing cycle times.</p>',
+            '<p><b>Supplier Performance Management:</b> Monitoring supplier performance is critical for maintaining quality, reliability, and compliance across the supply chain. BlueDill CMS enables procurement professionals to track key performance indicators, evaluate supplier performance against predefined metrics, and initiate corrective actions when necessary, fostering continuous improvement and driving supplier accountability.</p>'
+        ]
     }
 ];

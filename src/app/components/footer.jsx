@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { aboutLinks, solutionLinks, supportLinks } from './links'
+import {featureData} from './readmoreContent';
 
 import { FiLinkedin, FiFacebook, FiInstagram, FiTwitter, FiMail,FiFileText} from '../assets/icons/vander'
 
@@ -83,12 +84,15 @@ export default function Footer(){
                   </div>
                   <div>
                      <p>Solutions</p>
-                     {solutionLinks.map((item) => {
+                     {/* {solutionLinks.map((item) => {
                         return (
                            <Link href={item.path} key={item.linkname} className='flex flex-col text-gray-400 mt-4 font-light md:text-xs text-sm  md:w-1/2 w-full'>
                               {item.linkname}
                            </Link>
                         )
+                     })} */}
+                     {featureData.map((item)=>{
+                        return <Link href={'readmore/?page=' + item.id} key={item.id} className='flex flex-col text-gray-400 mt-4 font-light md:text-xs text-sm  md:w-1/2 w-full'>{item.title}</Link>
                      })}
                   </div>
                </div>
