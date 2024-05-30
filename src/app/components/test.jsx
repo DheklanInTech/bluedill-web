@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import Link from "next/link";
 import NavLight from "../components/navlight";
@@ -90,3 +91,4 @@ export default function Careers() {
         </>
     )
 }
+

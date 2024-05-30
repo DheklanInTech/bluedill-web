@@ -4,8 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import {FiHexagon, FiPhone,FiMail, FiMapPin} from "../assets/icons/vander";
 
-import {FiHexagon, FiPhone,FiMail, FiMapPin} from "../assets/icons/vander"
+
 
 export default function Contact(){
     useEffect(() => {
@@ -74,7 +75,7 @@ export default function Contact(){
                         <div className="relative overflow-hidden text-transparent -m-3">
                             <FiHexagon className="h-24 w-24 fill-amber-400/5 group-hover:fill-white/10 mx-auto"/>
                             <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-amber-400 rounded-xl group-hover:text-white duration-500 text-2xl flex align-middle justify-center items-center">
-                                <FiPhone/>
+                             <FiPhone/>
                             </div>
                         </div>
 
