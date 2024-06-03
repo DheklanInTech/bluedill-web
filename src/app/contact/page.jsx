@@ -31,14 +31,13 @@ export default function Contact(){
                         <div className="lg:ms-5">
                             <div className="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700 p-6">
                                 <h3 className="mb-6 text-2xl leading-normal font-semibold">Get in touch !</h3>
-
                                 <form>
                                     <p className="mb-0" id="error-msg"></p>
                                     <div id="simple-msg"></div>
                                     <div className="grid lg:grid-cols-12 lg:gap-6">
                                         <div className="lg:col-span-6 mb-5">
                                             <label htmlFor="name" className="font-semibold">Your Name:</label>
-                                            <input name="name" id="name" type="text" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Name :"/>
+                                            <input value="" name="name" id="name" type="text" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Name :"/>
                                         </div>
         
                                         <div className="lg:col-span-6 mb-5">
@@ -81,7 +80,7 @@ export default function Contact(){
                             <p className="text-slate-400 mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>
                             
                             <div className="mt-5">
-                                <Link href="tel:+152534-468-854" className="hover:text-amber-400">+152 534-468-854</Link>
+                                <Link href="tel:+447487614645" className="hover:text-amber-400"></Link>
                             </div>
                         </div>
                     </div>
