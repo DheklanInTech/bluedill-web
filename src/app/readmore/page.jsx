@@ -1,9 +1,9 @@
 "use client"
 import { useSearchParams } from 'next/navigation';
-import NavLight from '../components/navlight';
-import Footer from '../components/footer';
+import NavLight from '../../components/navlight';
+import Footer from '../../components/footer';
 import Image from 'next/image';
-import { featureData } from '../components/readmoreContent';
+import { featureData } from '../../components/readmoreContent';
 import { useState } from 'react';
 
 

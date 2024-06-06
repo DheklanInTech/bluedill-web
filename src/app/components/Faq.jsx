@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Link from "next/link";
-import {MdKeyboardArrowDown} from '../assets/icons/vander'
+import {MdKeyboardArrowDown} from '../../assets/icons/vander'
 
 export default function Faq(){
     const [activeIndex, setActiveIndex] = useState(1)

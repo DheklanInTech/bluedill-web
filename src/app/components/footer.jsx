@@ -5,7 +5,7 @@ import Image from "next/image";
 import { aboutLinks, solutionLinks, supportLinks } from './links'
 import {featureData} from './readmoreContent';
 
-import { FiLinkedin, FiFacebook, FiInstagram, FiTwitter, FiMail,FiFileText} from '../assets/icons/vander'
+import { FiLinkedin, FiFacebook, FiInstagram, FiTwitter, FiMail,FiFileText} from '../../assets/icons/vander'
 
 export default function Footer(){
     return(

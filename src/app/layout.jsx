@@ -1,8 +1,8 @@
 import './globals.css'
-import './assets/css/tailwind.css'
-import "./assets/css/materialdesignicons.min.css"
+import '../assets/css/tailwind.css'
+import "../assets/css/materialdesignicons.min.css"
 import { Figtree} from 'next/font/google'
-import ClientOnly from './components/ClientOnly'
+import ClientOnly from '../components/ClientOnly'
 
 const figtree= Figtree({ 
   subsets: ['latin'],

@@ -2,12 +2,12 @@
 import React,{useState, useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
-import NavLight from "../components/navlight";
-import Footer from "../components/footer";
-import ClientsTwo from "../components/clientTwo";
-import Faq from "../components/Faq";
+import NavLight from "../app/components/navlightight";
+import Footer from "../app/components/footeroter";
+import ClientsTwo from "../app/components/clientTwotTwo";
+import Faq from "../app/components/Faq/Faq";
 
-import {FiCheckCircle} from "../assets/icons/vander"
+import {FiCheckCircle} from "../app/assets/icons/vandernder"
 
 
 

@@ -3,14 +3,14 @@ import React, {useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import BrandLogo from "./components/brandLogo";
-import Features from "./components/features";
-import AboutOne from "./components/aboutOne";
-import AboutTwo from "./components/aboutTwo";
-import AboutThree from "./components/aboutThree";
-import AmazingFeatures from "./components/amazingFeatures"; 
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import BrandLogo from "../components/brandLogo";
+import Features from "../components/features";
+import AboutOne from "../components/aboutOne";
+import AboutTwo from "../components/aboutTwo";
+import AboutThree from "../components/aboutThree";
+import AmazingFeatures from "../components/amazingFeatures"; 
 import { TypeAnimation } from 'react-type-animation';
 
 

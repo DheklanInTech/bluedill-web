@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
-import NavLight from "../components/navlight";
-import Footer from "../components/footer";
+import NavLight from "../../components/navlight";
+import Footer from "../../components/footer";
 
 
 

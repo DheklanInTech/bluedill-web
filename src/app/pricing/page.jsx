@@ -3,11 +3,11 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 
 
-import NavLight from "../components/navlight";
-import Footer from "../components/footer";
-import AboutThree from "../components/aboutThree";
-import ClientsTwo from "../components/clientTwo";
-import Pricing from "../components/pricing";
+import NavLight from "../../components/navlight";
+import Footer from "../../components/footer";
+import AboutThree from "../../components/aboutThree";
+import ClientsTwo from "../../components/clientTwo";
+import Pricing from "../../components/pricing";
 
 
 

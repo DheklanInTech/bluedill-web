@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
 import { animateScroll as scroll } from 'react-scroll';
-import {FiMoon,FiSun, AiOutlineArrowUp} from '../assets/icons/vander'
+import {FiMoon,FiSun, AiOutlineArrowUp} from '../../assets/icons/vander'
 
 export default function Switcher(){
     const[scrollTop, setScrollTop] = useState(false)

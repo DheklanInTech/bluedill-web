@@ -2,9 +2,9 @@
 import React,{useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import {FiHexagon, FiPhone,FiMail, FiMapPin} from "../assets/icons/vander";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import {FiHexagon, FiPhone,FiMail, FiMapPin} from "../../assets/icons/vander";
 
 
 

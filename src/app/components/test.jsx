@@ -1,8 +1,8 @@
 
 import React, { useEffect } from "react";
 import Link from "next/link";
-import NavLight from "../components/navlight";
-import Footer from "../components/footer";
+import NavLight from "./navlight";
+import Footer from "./footer";
 
 const job = [
     {

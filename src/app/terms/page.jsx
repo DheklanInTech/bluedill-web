@@ -1,12 +1,12 @@
 "use client"
 import React, { useState,useEffect } from "react";
 import Link from "next/link";
-import NavLight from "../components/navlight";
-import Footer from "../components/footer";
+import NavLight from "../../components/navlight";
+import Footer from "../../components/footer";
 
 
 
-import {MdKeyboardArrowDown} from "../assets/icons/vander"
+import {MdKeyboardArrowDown} from "../../assets/icons/vander"
 
 export default function Terms(){
     useEffect(() => {

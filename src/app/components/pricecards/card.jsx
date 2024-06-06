@@ -5,7 +5,7 @@ import React,{useCallback} from "react";
 import Link from 'next/link'
 import { useRouter } from "next/navigation";
 // import { loadStripe } from '@stripe/stripe-js';
-import {FiCheckCircle} from '../../assets/icons/vander'
+import {FiCheckCircle} from '../../../assets/icons/vander'
 
 export const Cardwrapper = ({children}) => {
   return (
