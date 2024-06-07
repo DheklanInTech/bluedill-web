@@ -38,3 +38,6 @@ next-env.d.ts
 #firstclass
 /swap-pages
 swap-pages
+
+composer.json
+/composer.json
