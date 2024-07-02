@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 83.46 35.82">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 19.15px;
+        letter-spacing: -.03em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #414042;
+        font-family: Metropolis-Bold, Metropolis;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: url(#New_Gradient_Swatch_2);
+      }
+
+      .cls-2 {
+        font-size: 19.15px;
+        letter-spacing: -.06em;
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch_2" data-name="New Gradient Swatch 2" x1="0" y1="15.09" x2="30.18" y2="15.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2946df"/>
+      <stop offset="1" stop-color="#7222a5"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-3" d="M13.19,13.19H0V0H13.19V13.19Zm0,3.81H0v13.19H13.19v-13.19ZM30.18,0h-13.19V13.19h13.19V0Z"/>
+    <text class="cls-2" transform="translate(15.37 30.25) scale(1.17 1)"><tspan x="0" y="0">B</tspan></text>
+    <text class="cls-1" transform="translate(30.17 30.25)"><tspan x="0" y="0">luedill</tspan></text>
+  </g>
+</svg>
